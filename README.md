@@ -11,6 +11,8 @@ LeetCode-全球极客挚爱的技术成长平台 *[LeetCode-cn](https://leetcode
 - Google
 - Eric S. Raymond-[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
 - labuladong的[算法小炒](https://labuladong.gitbook.io/)
+- [力扣加加](https://leetcode-solution.cn/)
+- [图灵星球](https://turingplanet.org/)
 
 ## 墙裂推荐
 
