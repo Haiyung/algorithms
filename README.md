@@ -1,6 +1,6 @@
 # algorithms
 
-> Step by step into the algorithm.
+> 3 "easy" steps to algorithms
 
 ## 题目来源
 
@@ -13,7 +13,6 @@ LeetCode-全球极客挚爱的技术成长平台 *[LeetCode-cn](https://leetcode
 - labuladong的[算法小炒](https://labuladong.gitbook.io/)
 - [力扣加加](https://leetcode-solution.cn/)
 - [LeetCode Cookbook](https://books.halfrost.com/leetcode/)
-- [图灵星球](https://turingplanet.org/)
 
 ## 墙裂推荐
 
