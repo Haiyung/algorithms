@@ -64,8 +64,38 @@
         - 最优子结构：推导出的第n步的值是前面几个值的最佳值（累加/最大值/最小值）
         - 储存中间状态：开一个数组储存中间状态
         - 递推公式（状态转移方程或又称DP方程）
-- 字典树和并查集
-- 红黑树和AVL树
+- 字典树
+    - 定义：字典树，即 Trie 树，又称前缀树或单词查找树，是一种多叉树形结构。典型应用是用于统计和排序大量的字符串，经常被搜索引擎系统用于文本词频统计。优点是最大限度减少无谓的字符串比较，查询效率比哈希表高。
+    - 字典树的基本性质
+        1. 节点本身不存完整单词
+        2. 从根节点到某一节点，路径上经过的字符连接起来，为该节点对应的字符串
+        3. 每个节点的所有子节点路径代表的字符都不相同
+    - 字典树的核心思想：空间换时间 -> 利用字符串的公共前缀来降低查询时间的开销以达到提高效率的目的。
+- 并查集
+- 平衡二叉树
+    - https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
+    - AVL树
+        1. 平衡二叉搜索树
+        2. 每个节点存平衡因子(balance factor)：{-1，0，1}
+        3. 四种旋转操作
+        4. 不足：节点需要存储额外信息，且调整次数频繁，维护成本较高
+    - 红黑树
+        - 近似平衡的二叉搜索树，它能够确保任何一个节点的左右子树的高度差小于两倍，这让它旋转的频次降低，维护这棵二叉树的时间成本更少，性能比AVL树更好
+        - 红黑树的定义：
+            - 每个结点要么是红色，要么是黑色
+            - 根结点是黑色
+            - 每个空结点(nil节点或空节点)是黑色
+            - ☆不能有相邻的红色结点
+            - ☆任何一个结点到其每个叶子结点的所有路径都包含相同数目的黑色节点
+    - 对比AVL树和红黑树：
+        - AVL trees provide faster lookups than Red Black Trees because they are more strictly balanced.
+        - Red Black Trees provide faster insertion and removal operations than AVL trees as fewer rotations are done due to relatively relaxed balancing.
+        - AVL trees store balance factors or heights with each node, thus requires storage for an integer per node whereas Red Black Tree requires only 1 bit of information per node.
+        - Red Black Trees are used in most of the language libraries like map, multimap, multisetin C++ whereas AVL trees are used in databases where faster retrievals are required.
+    - 二三树
+    - B-tree
+    - Splay tree
+    - Treap
 
 ## 题目
 
@@ -135,4 +165,10 @@
 - #45 跳跃游戏 II
 - #518 零钱兑换 II
 
-
+其他：
+- #208 实现 Trie (前缀树)
+- #79 单词搜索 I
+- #212 单词搜索 II
+- #547 朋友圈
+- #200 岛屿数量
+- #130 被围绕的区域
